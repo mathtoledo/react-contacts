@@ -76,7 +76,7 @@ export default function Home() {
           !isLoading ? (
             filteredContacts.length > 0 ? (
               filteredContacts.map(user => (
-                <UserCard key={user._id} user={user} handleRemoveUser={handleRemoveUser}/>
+                <UserCard user={user} handleRemoveUser={handleRemoveUser}/>
               ))
             ) : (
               <p
